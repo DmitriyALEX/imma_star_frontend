@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 
+  'Roboto', 
+  'AnekOdia-Regular',
+  'AnekOdia-Bold',
+  'Lato-Black',
+  'MarkoOne-Regular',
+  'JacquesFrancoisShadow-Regular',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@font-face {
+  font-family: 'AnekOdia-Regular';
+  src: url('./fonts/AnekOdia-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'AnekOdia-Bold';
+  src: url('./fonts/AnekOdia-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'MarkoOne-Regular';
+  src: url('./fonts/MarkoOne-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'JacquesFrancoisShadow-Regular';
+  src: url('./fonts/JacquesFrancoisShadow-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Lato-Black';
+  src: url('./fonts/Lato-Black.ttf');
+}

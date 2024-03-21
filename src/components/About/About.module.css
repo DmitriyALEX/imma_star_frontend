@@ -1,0 +1,424 @@
+.wrapper {
+    min-height: 100vh;
+    position: relative;
+    background: linear-gradient( #16071d 50%, #9374a2);
+}
+
+.leftside {
+    position: absolute;
+    width: 0;
+    height: 100vh;
+    background-color: rgb(66, 86, 200);
+    animation-name: leftside;
+    animation-duration: 5s;
+    z-index: 1;
+}
+
+@keyframes leftside{ 
+    0% {
+        width: 50vw;
+        height: 100vh;
+        background: linear-gradient(rgb(49, 19, 46, 0.5), rgb(212, 196, 156, 0.5));
+    }
+    100% {
+        width: 0;
+        height: 100vh;
+        background: linear-gradient(rgb(49, 19, 46, 0.5), rgb(212, 196, 156, 0.5));
+    }
+}
+
+.rightside {
+    position: absolute;
+    width: 0;
+    height: 100vh;
+    right: 0;
+    background-color: antiquewhite;
+    animation-name: rightside;
+    animation-duration: 5s;
+    z-index: 1;
+}
+
+@keyframes rightside{ 
+    0% {
+        width: 50vw;
+        height: 100vh;
+        right: 0;
+        background: linear-gradient(rgb(212, 196, 156, 0.5), rgb(49, 19, 46, 0.5));
+    }
+    100% {
+        width: 0;
+        height: 100vh;
+        right: 0;
+        background: linear-gradient(rgb(212, 196, 156, 0.5), rgb(49, 19, 46, 0.5));
+    }
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 51px;
+}
+
+.menu_btn {
+    min-height: 8vh; 
+    min-width: 30vh;
+    font-size: 3rem;
+    /* --------- */
+    border-radius: 50px;
+    border: 3px solid rgb(162, 154, 132);
+    background: transparent;
+    color: rgb(212, 196, 156);
+}
+
+.menu_btn:hover {
+    min-height: 8vh; 
+    min-width: 30vh;
+    font-size: 3rem;
+    /* --------- */
+    border-radius: 50px;
+    border: 3px solid rgb(224, 174, 47);
+    background: transparent;
+    color: rgb(224, 174, 47);
+    cursor: pointer;
+}
+
+.menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.photo_container {
+    margin-top: 0;
+    animation-name: photo_container;
+    animation-duration: 3s;
+    z-index: 11;
+}
+
+.photo_container  > img { 
+    -webkit-user-drag: none;  
+}
+
+@keyframes photo_container {
+    0% {
+        transform: scale(0.9);
+        z-index: 0;
+    }
+    100% {
+        transform: scale(1);
+        z-index: 0;
+    }
+}
+
+/* TEXT CONTENT */
+.text {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    animation-name: text;
+    animation-duration: 10s;
+    z-index: 12;
+    user-select: none;
+    overflow-x: auto;
+}
+
+.text > h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+.text > ul {
+    margin: 0;
+    font-size: 2rem;
+    list-style-type: circle;
+}
+
+.text > h2 {
+    margin: 0;
+    margin-top: 32px;
+    font-size: 2rem;
+}
+
+.text > p {
+    margin: 0;
+    margin-top: 32px;
+    font-size: 2rem;
+}
+
+@keyframes text {
+    0% {
+        color: rgba(255, 255, 255, 0.0);
+    }
+    100% {
+        color: rgba(255, 255, 255);
+    }
+}
+
+/* ABOUT PROJECT */
+.about_project {
+    font-size: 2rem;
+    color: rgb(208, 195, 213); 
+    text-decoration: none;
+    animation-name: about_project;
+    animation-duration: 10s;
+}
+
+.about_project:active,
+.about_project:hover
+.about_project:visited {
+    text-decoration: none;
+}
+
+.about_project:hover {
+   color: rgb(155, 139, 161); 
+}
+
+@keyframes about_project {
+    0% {
+       
+        color: rgba(255, 255, 255, 0.0);
+    }
+    100% {
+        color: rgba(255, 255, 255);
+    }
+}
+
+.city_info > p{
+    display: block;
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* 4K  */
+@media (min-width: 3840px) {
+    .main_content {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        padding-top: 51px;
+    }
+
+    .menu_btn {
+        min-height: 8vh; 
+        min-width: 30vh;
+        font-size: 5rem;
+        border-radius: 100px;
+    }
+    
+    .menu_btn:hover {
+        min-height: 8vh; 
+        min-width: 30vh;
+        font-size: 5rem;
+        border-radius: 100px;
+    }
+
+    .photo_container {
+        margin-right: 5%;
+    }
+
+    .photo_container > img {
+        height: 60vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    /* TEXT */
+    .text > h1 {
+        margin: 0;
+        font-size: 8rem;
+    }
+    
+    .text > ul > li {
+        margin-left: 60px;
+        margin-top: 40px;
+        font-size: 5rem;
+        list-style-type: circle;
+    }
+    
+    .text > h2 {
+        margin: 0;
+        margin-top: 32px;
+        font-size: 8rem;
+    }
+    
+    .text > p {
+        margin: 0;
+        margin-top: 32px;
+        font-size: 8rem;
+    }
+
+    .nav_container {
+        margin-top: 32px;
+    }
+
+    .about_project {
+        font-size: 5rem;
+    }
+}
+
+@media (min-width: 1921px) and (max-width: 3839px) {
+    .main_content {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        padding-top: 51px;
+    }
+
+    .menu_btn {
+        min-height: 8vh; 
+        min-width: 30vh;
+        font-size: 5rem;
+        border-radius: 100px;
+    }
+    
+    .menu_btn:hover {
+        min-height: 8vh; 
+        min-width: 30vh;
+        font-size: 5rem;
+        border-radius: 100px;
+    }
+
+    .photo_container {
+        margin-right: 5%;
+    }
+
+    .photo_container > img {
+        height: 60vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    /* TEXT */
+    .text > h1 {
+        margin: 0;
+        font-size: 8rem;
+    }
+    
+    .text > ul > li {
+        margin-left: 60px;
+        margin-top: 40px;
+        font-size: 5rem;
+        list-style-type: circle;
+    }
+    
+    .text > h2 {
+        margin: 0;
+        margin-top: 32px;
+        font-size: 8rem;
+    }
+    
+    .text > p {
+        margin: 0;
+        margin-top: 32px;
+        font-size: 8rem;
+    }
+
+    .nav_container {
+        margin-top: 16px;
+    }
+
+    .about_project {
+        font-size: 5rem;
+    }
+}
+
+/* MOBILE */
+@media (orientation: portrait) {
+    .main_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 51px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1920px) {
+    .main_content {
+        margin-top: 25px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        padding-top: 51px;
+    }
+}
+
+@media (max-width: 992px) {
+    .wrapper {
+        position: relative; 
+        background-color: #31132e;
+    }
+
+    .main_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 51px;
+    }
+
+    .photo_container {
+        margin: 0;
+    }
+
+    .photo_container >img {
+        max-width: 100vw;
+        max-height: 100vh;
+    }
+
+    /* TEXT CONTENT */
+    .text {
+        display: flex;
+        flex-direction: column;
+        margin-left: 16px;
+    }
+
+    .text > h1 {
+        margin: 16px 4px 10px 4px;
+        font-size: 2.1rem; 
+    }
+
+    .text > ul {
+        margin: 0;
+        font-size: 1.6rem;
+        list-style-type: circle;
+    } 
+
+    .text > ul > li {
+        margin-top: 8px;
+    }
+
+    .text > h2 {
+        margin: 0;
+        margin-top: 32px;
+        font-size:  2.1rem; 
+    }
+
+    .text > p {
+        margin: 0;
+        margin-top: 32px;
+        font-size: 1.6rem;
+        padding-bottom: 16px;
+    }
+
+    .nav_container {
+        margin-top: 8px;
+    }
+
+    .about_project {
+        font-size: 2rem;
+    }
+
+    .city_info {
+        display: flex;
+        justify-content: center;
+    }
+}

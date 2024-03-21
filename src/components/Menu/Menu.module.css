@@ -1,0 +1,633 @@
+.menu_list {
+    position: relative;
+    display: flex;
+    align-items: center;
+    align-content: space-around; 
+    flex-direction: column;
+    justify-content: space-evenly; 
+    left: 50%;
+    top: 50%; 
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(237, 237, 207);  
+    min-height: 60vh; 
+    min-width: 60vh; 
+    margin-top: 38px;
+    /* RADIUS */
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px; 
+}
+
+.menu_list:last-child {
+    position: absolute;
+    bottom: 0;
+}
+
+.menu_about {
+    position: absolute; 
+   left: 0;
+   bottom: 0;
+   border-left: 0 solid transparent;
+   border-right: 60vh solid transparent;
+   /* TOP DIV */
+   border-top-left-radius: 100px;
+}
+
+.menu_list_about_link {
+    height: 7rem;
+    width: 15rem;
+    margin-right: 20px;
+    font-size: 3rem;
+    z-index: 4;
+}
+
+.menu_list_about_btn {
+    position: absolute; 
+    height: 9rem;
+    width: 15rem;
+    margin-right: 70px;
+    font-size: 3rem;
+    background-color: transparent;
+    border: 3px solid rgb(88, 7, 91);
+    border-radius: 50px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.menu_list_about_btn:hover {
+    position: absolute; 
+    height: 9rem;
+    width: 15rem;
+    margin-right: 70px;
+    font-size: 3rem;
+    background-color: transparent;
+    border: 3px solid rgb(172, 10, 177);
+    border-radius: 50px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.menu_galery {
+    position: absolute; 
+    color: black;
+    height: 50%; 
+    width: 50%;
+    right: 0; 
+    top: 0; 
+    min-height: 60vh; 
+    min-width: 30vh; 
+    border-left: 60vh solid transparent;
+    border-right: 0 solid transparent;
+    /* BOTTOM DIV */
+    border-bottom: 60vh solid rgba(179, 179, 59, 0.1);
+    border-bottom-right-radius: 100px;  
+}
+
+.menu_list_galery_link {
+    height: 7rem;
+    width: 15rem;
+    margin-left: 110px;
+    font-size: 3rem;
+    z-index: 4;
+}
+
+.menu_list_galery_btn {
+    height: 9rem;
+    width: 15rem;
+    margin-top: 5px;
+    font-size: 3rem;
+    background-color: transparent;
+    border: 3px solid rgb(88, 7, 91);
+    border-radius: 50px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.menu_list_galery_btn:hover {
+    height: 9rem;
+    width: 15rem;
+    margin-top: 5px;
+    font-size: 3rem;
+    background-color: transparent;
+    border: 3px solid rgb(172, 10, 177);
+    border-radius: 50px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.home_link {
+    margin-top: 5px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.home {
+    margin-top: 5px;
+    background: transparent;
+    border-radius: 24px;
+    padding: 10px;
+    font-size: 1.5rem;
+    border: 3px solid rgb(129, 129, 129); 
+    z-index: 10;
+    cursor: pointer;
+}
+
+@media (min-width: 3840px) {
+    .menu_list {
+        left: 50%;
+        top: 50%;
+        position: relative;
+        display: flex;
+        align-items: center; 
+        align-content: space-around;
+        flex-direction: column;
+        justify-content: space-evenly; 
+        background-color: rgb(237, 237, 207);  
+        min-height: 60vh; 
+        min-width: 60vh; 
+        margin-top: 40px; 
+        border-top-left-radius: 100px;
+        border-bottom-right-radius: 100px;    
+    }
+
+    .menu_list_about_link {
+        height: 10rem;
+        width: 15rem;
+        margin-right: 150px;
+        margin-bottom: 200px;
+        z-index: 4;
+    }
+
+    .menu_list_about_btn {
+        position: absolute; 
+        height: 9rem;
+        width: 25rem;
+        margin-top: 50px;
+        margin-left: -50px;
+        font-size: 6rem;
+        background-color: transparent;
+        border: 3px solid rgb(88, 7, 91);
+        border-radius: 150px;
+        cursor: pointer;
+        z-index: 3;
+    }
+    
+    .menu_list_about_btn:hover {
+        position: absolute; 
+        height: 9rem;
+        width: 25rem;
+        margin-top: 50px;
+        margin-left: -50px;
+        font-size: 6rem;
+        background-color: transparent;
+        border: 3px solid rgb(172, 10, 177);
+        border-radius: 150px;
+        cursor: pointer;
+        z-index: 3;
+    }
+
+    .menu_list_galery_link {
+        height: 10rem;
+        width: 15rem;
+        margin-left: -300px;
+        margin-bottom: 200px;
+        z-index: 4;
+    }
+
+    .menu_list_galery_btn {
+        height: 9rem;
+        width: 27rem;
+        margin-top: 50px;
+        margin-left: 80px;
+        font-size: 6rem;
+        background-color: transparent;
+        border: 3px solid rgb(88, 7, 91);
+        border-radius: 150px;
+        cursor: pointer;
+        z-index: 3;
+    }
+    
+    .menu_list_galery_btn:hover {
+        height: 9rem;
+        width: 27rem;
+        margin-top: 50px;
+        margin-left: 80px;
+        font-size: 6rem;
+        background-color: transparent;
+        border: 3px solid rgb(172, 10, 177);
+        border-radius: 150px;
+        cursor: pointer;
+        z-index: 3;
+    }
+
+    .home {
+        margin-top: 5px;
+        background: transparent;
+        border-radius: 100px;
+        padding: 29px;
+        font-size: 6rem;
+        border: 3px solid rgb(129, 129, 129); 
+        z-index: 10;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 451px) and (max-width: 1024px) { 
+    .menu_list {
+        left: 50%;
+        top: 50%;
+        position: relative;
+        display: flex;
+        align-items: center; 
+        align-content: space-around;
+        flex-direction: column;
+        justify-content: space-evenly; 
+        background-color: rgb(237, 237, 207);  
+        min-height: 60vh; 
+        min-width: 60vh; 
+        margin-top: 40px; 
+        border-top-left-radius: 100px;
+        border-bottom-right-radius: 100px;    
+    }
+
+    .menu_list:last-child {
+        position: absolute;
+        bottom: 0;
+    }
+    
+    .menu_about {
+        position: absolute; 
+        left: 0;
+        bottom: 0;
+        border-left: 0 solid transparent;
+        border-right: 60vh solid transparent;
+        /* TOP DIV */
+        border-top-left-radius: 100px;
+    }
+    
+    .menu_list_about_link {
+        height: 7rem;
+        width: 15rem;
+        margin-right: 20px;
+        font-size: 3rem;
+        z-index: 4;
+    }
+    
+    .menu_list_about_btn {
+        position: absolute; 
+        height: 9rem;
+        width: 15rem;
+        margin-right: 70px;
+        font-size: 3rem;
+        background-color: transparent;
+        border: 3px solid rgb(88, 7, 91);
+        border-radius: 50px;
+        cursor: pointer;
+        z-index: 3;
+    }
+    
+    .menu_list_about_btn:hover {
+        position: absolute; 
+        height: 9rem;
+        width: 15rem;
+        margin-right: 70px;
+        font-size: 3rem;
+        background-color: transparent;
+        border: 3px solid rgb(172, 10, 177);
+        border-radius: 50px;
+        cursor: pointer;
+        z-index: 3;
+    }
+    
+    .menu_galery {
+        position: absolute; 
+        color: black;
+        height: 50%; 
+        width: 50%;
+        right: 0; 
+        top: 0; 
+        min-height: 60vh; 
+        min-width: 30vh; 
+        border-left: 60vh solid transparent;
+        border-right: 0 solid transparent;
+        /* BOTTOM DIV */
+        border-bottom: 60vh solid rgba(179, 179, 59, 0.1);
+        border-bottom-right-radius: 100px;  
+    }
+    
+    .menu_list_galery_link {
+        height: 7rem;
+        width: 15rem;
+        margin-left: 110px;
+        font-size: 3rem;
+        z-index: 4;
+    }
+    
+    .menu_list_galery_btn {
+        height: 9rem;
+        width: 15rem;
+        margin-top: 5px;
+        font-size: 3rem;
+        background-color: transparent;
+        border: 3px solid rgb(88, 7, 91);
+        border-radius: 50px;
+        cursor: pointer;
+        z-index: 3;
+    }
+    
+    .menu_list_galery_btn:hover {
+        height: 9rem;
+        width: 15rem;
+        margin-top: 5px;
+        font-size: 3rem;
+        background-color: transparent;
+        border: 3px solid rgb(172, 10, 177);
+        border-radius: 50px;
+        cursor: pointer;
+        z-index: 3;
+    }
+
+    .home {
+        margin-top: 5px;
+        background: transparent;
+        border-radius: 100px;
+        padding: 10px;
+        font-size: 1rem;
+        border: 3px solid rgb(129, 129, 129); 
+        z-index: 10;
+        cursor: pointer;
+        margin-bottom: 60px;
+    }
+
+    .home_link {
+        margin-top: 5px;
+        cursor: pointer;
+        z-index: 10;
+    }
+    
+    .home {
+        margin-top: 5px;
+        background: transparent;
+        border-radius: 24px;
+        padding: 10px;
+        font-size: 1.5rem;
+        border: 3px solid rgb(129, 129, 129); 
+        z-index: 10;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 450px) {
+    .menu_list {
+        position: relative;
+        display: flex;
+        align-items: center;
+        align-content: space-around;
+        flex-direction: column;
+        justify-content: space-evenly;
+        left: 50%;
+        top: 50%;  
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        background-color: rgb(237, 237, 207);  
+        min-height: 60vh;  
+        min-width: 97vw;  
+        /* RADIUS */
+        border-top-left-radius: 100px;
+        border-bottom-right-radius: 100px; 
+        margin-top: 34px;
+    }
+    
+    .menu_about {
+        position: absolute; 
+        left: 0;
+        bottom: 0;
+        min-width: 25vw;  
+        border-left: 0 solid transparent;
+        border-right: 60vh solid transparent;
+        /* TOP DIV */
+        border-top-left-radius: 100px;
+    }
+
+    .menu_list_about_link {
+        width: 15rem;
+        margin-right: 140px;
+        font-size: 3rem;
+        z-index: 4;
+        margin-top: 70px; 
+    }
+    
+    .menu_list_about_btn {
+        position: absolute; 
+        height: 7rem; 
+        width: 15rem;
+        margin-right: 50px;
+        margin-left: 30px;
+        font-size: 3rem;
+        background-color: transparent;
+        border: 3px solid rgb(88, 7, 91);
+        border-radius: 50px;
+        cursor: pointer;
+        z-index: 3;
+    }
+    
+    .menu_list_about_btn:hover {
+        position: absolute; 
+        height: 7rem;
+        width: 15rem;
+        margin-right: 50px;
+        margin-left: 30px;
+        font-size: 3rem;
+        background-color: transparent;
+        border: 3px solid rgb(172, 10, 177);
+        border-radius: 50px;
+        cursor: pointer;
+        z-index: 3;
+    }
+    
+    .menu_galery {
+        position: absolute; 
+        color: black;
+        height: 50%; 
+        width: 50%;
+        right: 0; 
+        top: 0; 
+        min-height: 60vh; 
+        min-width: 30vw; 
+        border-left: 60vh solid transparent;
+        border-right: 0 solid transparent;
+         border-bottom: 60vh solid rgba(107, 107, 44, 0.1); 
+        border-bottom-right-radius: 100px;  
+    }
+    
+    .menu_list_galery_link {
+        height: 7rem;
+        width: 15rem;
+        margin-left: 140px;
+        font-size: 3rem;
+        z-index: 4;
+        margin-bottom: 40px;
+    }
+    
+    .menu_list_galery_btn {
+        height: 7rem;
+        width: 15rem;
+        margin-top: 5px;
+        margin-left: -40px;
+        font-size: 3rem;
+        background-color: transparent;
+        border: 3px solid rgb(88, 7, 91);
+        border-radius: 50px;
+        cursor: pointer;
+        z-index: 3;
+    }
+    
+    .menu_list_galery_btn:hover {
+        height: 7rem;
+        width: 15rem;
+        margin-top: 5px;
+        font-size: 3rem;
+        background-color: transparent;
+        border: 3px solid rgb(172, 10, 177);
+        border-radius: 50px;
+        cursor: pointer;
+        z-index: 3;
+    }
+    
+    .home_link {
+        margin-top: 5px;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    .home {
+        margin-top: 5px;
+        background: transparent;
+        border-radius: 100px;
+        padding: 10px;
+        font-size: 1rem;
+        border: 3px solid rgb(129, 129, 129); 
+        z-index: 10;
+        cursor: pointer;
+        margin-bottom: 60px;
+    }
+}
+
+@media (max-width: 376px) {
+    .menu_list {
+        min-height: 60vh;  
+        min-width: 97vw;  
+        margin-top: 44px;
+    }
+    
+    .menu_about {
+        position: absolute; 
+        left: 0;
+        bottom: 0;
+        min-width: 25vw;  
+        border-left: 0 solid transparent;
+        border-right: 60vh solid transparent;
+        /* TOP DIV */
+        border-top-left-radius: 100px;
+    }
+
+    .menu_list_about_link {
+        width: 15rem;
+        margin-right: 100px;
+        font-size: 3rem;
+        z-index: 4;
+        margin-top: 40px; 
+    }
+    
+    .menu_list_about_btn {
+        position: absolute; 
+        height: 7rem; 
+        width: 15rem;
+        margin-right: 50px;
+        margin-left: 30px;
+        font-size: 3rem;
+        background-color: transparent;
+        border: 3px solid rgb(88, 7, 91);
+        border-radius: 50px;
+        cursor: pointer;
+        z-index: 3;
+    }
+    
+    .menu_list_about_btn:hover {
+        position: absolute; 
+        height: 7rem;
+        width: 15rem;
+        margin-right: 50px;
+        margin-left: 30px;
+        font-size: 3rem;
+        background-color: transparent;
+        border: 3px solid rgb(172, 10, 177);
+        border-radius: 50px;
+        cursor: pointer;
+        z-index: 3;
+    }
+    
+    .menu_galery {
+        position: absolute; 
+        color: black;
+        height: 50%; 
+        width: 50%;
+        right: 0; 
+        top: 0; 
+        min-height: 60vh; 
+        min-width: 30vh; 
+        border-left: 60vh solid transparent;
+        border-right: 0 solid transparent;
+        /* BOTTOM DIV */
+         border-bottom: 60vh solid rgba(107, 107, 44, 0.1); 
+        border-bottom-right-radius: 100px;  
+    }
+    
+    .menu_list_galery_link {
+        height: 7rem;
+        width: 15rem;
+        margin-left: 100px;
+        padding-left: 20px;
+        font-size: 3rem;
+        margin-bottom: 60px;
+    }
+    
+    .menu_list_galery_btn {
+        height: 7rem;
+        width: 15rem;
+        margin-top: 50px;
+        margin-left: -20px;
+        font-size: 3rem;
+        border-radius: 50px;
+    }
+    
+    .menu_list_galery_btn:hover {
+        height: 7rem;
+        width: 15rem;
+        margin-top: 50px;
+        margin-left: -20px;
+        font-size: 3rem;
+        border-radius: 50px;
+    }
+    
+    .home_link {
+        margin-top: 5px;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    .home {
+        margin-top: 5px;
+        border-radius: 100px;
+        padding: 10px;
+        font-size: 1rem;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 375px) {
+    .menu_list {
+        min-height: 60vh;  
+        min-width: 97vw;  
+    }
+}
